@@ -1,0 +1,5 @@
+[wokwi]
+version = 1
+firmware = ".pio/build/attiny85/firmware.hex"
+elf = ".pio/build/attiny85/firmware.elf"
+vcdFile = "wokwi.vcd"

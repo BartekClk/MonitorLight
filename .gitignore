@@ -1,0 +1,55 @@
+# ==========================================
+# Pliki binarne i kompilaty (main.exe itp.)
+# ==========================================
+*.exe
+*.hex
+*.elf
+*.bin
+*.o
+
+# ==========================================
+# Szablony README z PlatformIO
+# ==========================================
+# Ignoruje pliki README bez rozszerzenia w podfolderach
+**/include/README
+**/lib/README
+**/test/README
+
+# ==========================================
+# PlatformIO & Środowisko
+# ==========================================
+.pio/
+.pioenvs/
+.piolibdeps/
+.clangd/
+
+# ==========================================
+# VS Code (cały folder z c_cpp_properties itp.)
+# ==========================================
+.history/
+.vscode/
+
+# ==========================================
+# Wokwi & Przebiegi logiczne
+# ==========================================
+*.vcd
+wokwi.vcd
+
+# ==========================================
+# KiCad (lokalne ustawienia i kopie)
+# ==========================================
+*.kicad_prl
+*.bak
+*-bak
+*-bak-*
+*.kicad_pcb-bak
+*.kicad_sch-bak
+_autosave-*
+*.lck
+fp-info-cache
+
+# ==========================================
+# Systemowe
+# ==========================================
+.DS_Store
+Thumbs.db

@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "author": "Bartek",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-attiny85", "id": "tiny", "top": 0, "left": 0, "rotate": 90, "attrs": {} },
+    { "type": "wokwi-ky-040", "id": "enc", "top": 0, "left": -250, "rotate": 0, "attrs": {} },
+    { "type": "wokwi-led", "id": "led1", "top": 160, "left": 45, "rotate": 180, "attrs": { "color": "white" } },
+    { "type": "wokwi-resistor", "id": "r1", "top": 100, "left": 30, "rotate": 90, "attrs": { "value": "220" } },
+    { "type": "wokwi-logic-analyzer", "id": "logic1", "top": -160, "left": 120, "attrs": {} }
+  ],
+  "connections": [
+    [ "tiny:GND", "enc:GND", "black", [ "h-1", "*", "h100" ] ],
+    [ "tiny:PB3", "enc:CLK", "green", [ "h-1", "*", "h120" ] ],
+    [ "tiny:PB4", "enc:DT", "blue", [ "h-1", "*", "h110" ] ],
+    [ "tiny:PB1", "enc:SW", "orange", [ "h50", "v-80", "*", "h20" ] ],
+    [ "tiny:VCC", "enc:VCC", "red", [ "h60", "v-80", "*", "h30" ] ],
+    [ "tiny:PB0", "r1:1", "red", [] ],
+    [ "r1:2", "led1:A", "red", [] ],
+    [ "led1:C", "tiny:GND", "black", [ "v-10", "*", "h-10" ] ],
+    [ "logic1:GND", "tiny:GND", "black", [] ],
+    [ "logic1:D0", "tiny:PB0", "gold", [] ],
+    [ "logic1:D1", "tiny:PB3", "green", [] ],
+    [ "logic1:D2", "tiny:PB4", "blue", [] ]
+  ],
+  "dependencies": {}
+}

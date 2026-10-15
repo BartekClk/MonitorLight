@@ -657,6 +657,14 @@
     "meta": {
       "version": 1
     },
+    "ngspice": {
+      "fix_include_paths": true,
+      "meta": {
+        "version": 0
+      },
+      "model_mode": 4,
+      "workbook_filename": ""
+    },
     "page_layout_descr_file": "",
     "plot_directory": "",
     "reuse_designators": true,
@@ -669,7 +677,7 @@
         "uuid": "758db198-b2eb-4041-ad85-b10a869a2c4f"
       }
     ],
-    "used_designators": "#FLG1-3,R1,J1-8,C1-2,U1-2,L1,C_IN1-3,Q1,C_IN_HF1,R_RST1,R_GATE1,SW1,#PWR1-21,C_BST1,C_Bulk1,C_MCU1,C_OUT1,R_PD1",
+    "used_designators": "V1-2,#PWR16,#PWR22-24,R_PD2",
     "variants": []
   },
   "sheets": [
