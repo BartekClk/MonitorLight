@@ -47,6 +47,7 @@ wokwi.vcd
 _autosave-*
 *.lck
 fp-info-cache
+*.history/
 
 # ==========================================
 # Systemowe
